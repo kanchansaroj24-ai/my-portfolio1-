@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanchan Saroj | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f4f6f8;
+      color:#333;
+    }
+
+    header{
+      min-height:100vh;
+      background:linear-gradient(135deg,#4f46e5,#6366f1);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    header img{
+      width:300px;
+      height:300px;
+      border-radius:50%;
+      border:5px solid #fff;
+      object-fit:cover;
+      margin-bottom:20px;
+    }
+
+    header h1{
+      font-size:3rem;
+    }
+
+    header p{
+      font-size:1.2rem;
+      margin-top:10px;
+    }
+
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .title{
+      text-align:center;
+      font-size:2.2rem;
+      margin-bottom:40px;
+      color:#4f46e5;
+    }
+
+    .about{
+      background:#fff;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .skill{
+      background:#fff;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      font-weight:600;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      transition:transform 0.3s;
+    }
+
+    .skill:hover{
+      transform:translateY(-8px);
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .project{
+      background:#fff;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .project h3{
+      color:#4f46e5;
+      margin-bottom:10px;
+    }
+
+    .contact{
+      background:#4f46e5;
+      color:#fff;
+      text-align:center;
+      padding:50px 20px;
+      border-radius:20px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#e5e7eb;
+      margin-top:40px;
+    }
+
+    #topBtn{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      padding:12px 16px;
+      border:none;
+      border-radius:50%;
+      background:#4f46e5;
+      color:#fff;
+      font-size:18px;
+      cursor:pointer;
+      display:none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <img src="WhatsApp Image 2025-12-24 at 4.23.51 PM.jpeg" alt="Kanchan Saroj">
+    <h1>Kanchan Saroj</h1>
+    <p>Web Developer | HTML • CSS • JavaScript</p>
+  </div>
+</header>
+
+<section>
+  <h2 class="title">About Me</h2>
+  <div class="about">
+    <p>
+      I am Kanchan Saroj, a beginner web developer learning HTML, CSS, and JavaScript.
+      I have strong communication skills and enjoy teamwork, group activities,
+      and presenting ideas confidently.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">My Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML5 & Semantic Structure</div>
+    <div class="skill">CSS3 (Flexbox & Responsive Design)</div>
+    <div class="skill">Basic JavaScript Knowledge</div>
+    <div class="skill">Communication Skills</div>
+    <div class="skill">Teamwork & Collaboration</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio created using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>JavaScript Practice</h3>
+      <p>Small projects to understand JS basics and DOM.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: kanchansaroj1205@gmail.com</p>
+  </div>
+</section>
+
+<button id="topBtn">⬆</button>
+
+<script>
+  const topBtn = document.getElementById("topBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
+
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
+
